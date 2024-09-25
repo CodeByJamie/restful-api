@@ -1,3 +1,9 @@
 // run `node index.js` in the terminal
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const app = require('express')();
+const PORT = 3000;
+
+app.listen(
+    PORT,
+    () => console.log(`Server is ready at http:localhost:${PORT}`)
+)
